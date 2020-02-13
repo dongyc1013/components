@@ -1,0 +1,51 @@
+.addButton {
+  display: none;
+}
+.treeListItem {
+  position: relative;
+  width: 300px;
+  height: 20px;
+  text-indent: 40px;
+}
+.treeListItem.spreadItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  border: 6px solid transparent;
+  border-top: 6px solid red;
+  margin-top: 6px;
+}
+.treeListItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  border: 6px solid transparent;
+  border-left: 6px solid red;
+  margin-top: 6px;
+}
+.treeListItem:hover {
+  background-color: gray;
+}
+.treeListItem:hover .addButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+}
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.modal {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
