@@ -1,0 +1,20 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": { 
+    "indent": ["error", 2],
+    "no-console": 0,
+    "no-empty": 2,
+    "no-unreachable": 2,
+    "no-else-return": 2,
+    "no-empty-function": 2,
+    "no-use-before-define": 2,
+    "jsx-quotes": ["error", "prefer-single"],
+    "semi": ["error", "never"]
+   }
+}
